@@ -1,3 +1,119 @@
-:root{
-    --primary-color: #A259FF;
+:root {
+    --purple: #A259FF;
+    --dark-grey: #2B2B2B;
+    --light-grey: #3B3B3B;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-grey);
+    color: white;
+}
+
+header {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* padding: 2rem 1rem; */
+}
+
+header .logo {
+    height: 30px;
+    width: 30px;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header nav span {
+    margin: 1rem;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: .3s ease;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--purple);
+    }
+}
+
+header nav button {
+    background-color: var(--purple);
+    outline: none;
+    border: none;
+    padding: .8rem;
+    color: var(--white);
+    border-radius: 15px;
+}
+/* main section styling */
+.hero{
+    /* border: 2px solid red; */
+    /* justify-content: center; */
+}
+.hero .container{
+    display: flex;
+    /* border: 2px solid green; */
+    margin: 2rem auto;
+    width: 90%;
+}
+.hero .container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hero .container .text .title{
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+.hero .container .text .para{
+    font-size: 2.5rem;
+}
+.hero .container .text .btn{
+    padding: 1rem 0;
+}
+.hero .container .text button{
+    background-color: var(--purple);
+    outline: none;
+    border: none;
+    padding: .8rem;
+    color: var(--white);
+    border-radius: 15px;
+}
+.hero .container .text .stats{
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.hero .container .text .stats .counter{
+    display: flex;
+    flex-direction: column;
+}
+.hero .container .text .stats .counter .num{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.hero .container .image{
+    /* width: 60%; */
+}
+.hero .container .image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* trending section styling */
+.trending .container{
+    display: flex;
+    /* border: 2px solid green; */
+    margin: 2rem auto;
+    width: 90%;
 }
